@@ -14,3 +14,6 @@
 .button_icon {
   @apply relative p-1 flex items-center justify-center cursor-pointer text-white border-2 border-primary w-9 h-9 rounded-full after:content-[''] after:absolute after:w-full after:h-full after:bg-primary after:transition-all duration-500 after:duration-500 after:rounded-full after:left-0 after:top-0 after:scale-100 hover:after:scale-0 hover:text-primary;
 }
+.menu_link {
+  @apply inline-block font-bold font-primary px-3 py-1 rounded-sm relative after:content-[''] after:absolute after:top-0 after:left-0 after:bg-primary after:w-full after:h-full after:scale-50 after:opacity-0 after:transition-all after:duration-500 hover:after:scale-100 hover:after:opacity-15 hover:text-primary duration-500 transition-all after:rounded-sm;
+}
