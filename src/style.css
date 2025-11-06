@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Rajdhani", sans-serif;
+  --font-secondary: "Rubik", sans-serif;
+  --color-primary: #ff014f;
+}
+
+.social_icon {
+  @apply inline-block relative bg-gray-200 w-8 h-8 leading-8 text-center rounded-full after:content-[''] after:absolute after:w-full after:h-full after:bg-primary after:rounded-full after:left-0 after:top-0 after:scale-0 after:transition-all after:duration-500 hover:after:scale-100 hover:text-white duration-500;
+}
+.button_icon {
+  @apply relative p-1 flex items-center justify-center cursor-pointer text-white border-2 border-primary w-9 h-9 rounded-full after:content-[''] after:absolute after:w-full after:h-full after:bg-primary after:transition-all duration-500 after:duration-500 after:rounded-full after:left-0 after:top-0 after:scale-100 hover:after:scale-0 hover:text-primary;
+}
