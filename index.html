@@ -10,97 +10,68 @@
     <link href="./src/style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="bg-gray-100 py-4">
-      <div class="container mx-auto flex items-center justify-between px-3">
-        <img src="./src/img/logo-white.png" alt="" />
-        <nav class="hidden lg:block">
-          <ul class="flex gap-2">
-            <li>
-              <a href="index.html" class="menu_link">Home</a>
-            </li>
-            <li>
-              <a href="about.html" class="menu_link">About</a>
-            </li>
-            <li>
-              <a href="services.html" class="menu_link">Services</a>
-            </li>
-            <li>
-              <a href="blog.html" class="menu_link">Blog</a>
-            </li>
-            <li>
-              <a href="project.html" class="menu_link">Project</a>
-            </li>
-            <li>
-              <a href="contact.html" class="menu_link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="flex items-center gap-5">
-          <ul class="flex items-center gap-2">
-            <li>
-              <a href="#" class="social_icon"
-                ><i class="fa-brands fa-instagram text-sm relative z-1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social_icon"
-                ><i class="fa-brands fa-linkedin-in text-sm relative z-1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social_icon"
-                ><i class="fa-brands fa-x-twitter text-sm relative z-1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="social_icon"
-                ><i class="fa-brands fa-facebook-f text-sm relative z-1"></i
-              ></a>
-            </li>
-          </ul>
-          <button class="button_icon" onclick="showInfoModal()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-5 h-5 relative z-1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </button>
+    <header
+      class="w-full h-screen bg-center bg-no-repeat bg-cover"
+      style="background-image: url(./src/img/hero-bg.jpg)"
+    >
+      <div class="container mx-auto py-3 px-2">
+        <div class="flex items-center justify-between">
+          <div>
+            <img src="./src/img/logo-white.png" alt="" class="h-8" />
+          </div>
+          <div>
+            <button class="button_icon" onclick="showInfoModal()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 relative z-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
-
-    <!-- Header Section End -->
-
+    <!-- Mobile Menu -->
     <div
       id="modal_overlay"
-      class="bg-black/60 w-screen h-screen fixed z-100 top-0 left-0 transition-opacity duration-300 opacity-0 invisible ease-in-out"
+      class="bg-black/60 w-screen h-screen fixed z-100 top-0 left-0 transition-opacity duration-300 ease-in-out invisible opacity-0"
     >
       <div
         id="modal_right_open"
-        class="bg-gray-100 w-[400px] shadow h-screen fixed right-0 top-0 translate-x-full transition-transform duration-500 ease-in-out"
+        class="bg-gray-100 w-[250px] shadow h-screen fixed left-0 top-0 translate-x-[-250px] transition-transform duration-500 ease-in-out"
       >
-        <div class="flex items-center justify-between bg-gray-200 p-4">
-          <img src="./src/img/logo-white.png" alt="" />
-
+        <div class="flex items-center justify-between bg-gray-200 p-3">
+          <img src="./src/img/logo-white.png" alt="" class="h-7" />
           <a
             href="#"
-            class="social_icon bg-gray-300! w-10! h-10! leading-10!"
+            class="social_icon bg-gray-300! w-8! h-8! leading-8!"
             onclick="hideInfoModal()"
             ><i class="fa-solid fa-xmark text-sm relative z-1"></i
           ></a>
         </div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam unde eos
+        eveniet illum deleniti, eum pariatur voluptatibus sequi cumque facilis
+        laudantium nemo delectus adipisci voluptas, magnam animi amet error
+        minus, cum dicta. Sapiente accusantium, eum aperiam, rem est doloribus
+        suscipit odio hic voluptate sint, quam officiis laboriosam dignissimos
+        quisquam enim perspiciatis id non porro saepe voluptatibus quidem
+        architecto itaque! Neque eum laborum soluta illo natus molestiae
+        asperiores, et inventore, ex dolorum nihil rem numquam laudantium sed?
+        Voluptatibus, quae? Labore laudantium porro hic ratione alias numquam
+        nulla, perspiciatis consequuntur. Dolore nulla expedita, tempora
+        distinctio aspernatur eos non voluptate dolor perferendis possimus.
       </div>
     </div>
+    <!-- End Mobile Menu -->
 
     <script src="./src/script.js"></script>
   </body>
