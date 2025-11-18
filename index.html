@@ -10,16 +10,61 @@
     <link href="./src/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header
-      class="w-full h-screen bg-center bg-no-repeat bg-cover"
-      style="background-image: url(./src/img/hero-bg.jpg)"
-    >
-      <div class="container mx-auto py-3 px-2">
+    <header class="bg-">
+      <div class="container mx-auto py-3 px-3">
         <div class="flex items-center justify-between">
           <div>
             <img src="./src/img/logo-white.png" alt="" class="h-8" />
           </div>
-          <div>
+          <nav class="hidden lg:block">
+            <ul class="flex gap-3">
+              <li>
+                <a href="index.html" class="menu_link">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="menu_link">About</a>
+              </li>
+              <li>
+                <a href="services.html" class="menu_link">Services</a>
+              </li>
+              <li>
+                <a href="blog.html" class="menu_link">Blog</a>
+              </li>
+              <li>
+                <a href="project.html" class="menu_link">Project</a>
+              </li>
+              <li>
+                <a href="contact.html" class="menu_link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="md:flex md:items-center md:gap-5">
+            <div class="hidden md:block">
+              <ul class="flex items-center gap-2">
+                <li>
+                  <a href="#" class="social_icon"
+                    ><i class="fa-brands fa-instagram text-sm relative z-1"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social_icon"
+                    ><i
+                      class="fa-brands fa-linkedin-in text-sm relative z-1"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social_icon"
+                    ><i class="fa-brands fa-x-twitter text-sm relative z-1"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="social_icon"
+                    ><i class="fa-brands fa-facebook-f text-sm relative z-1"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
             <button class="button_icon" onclick="showInfoModal()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +85,6 @@
         </div>
       </div>
     </header>
-    <!-- Mobile Menu -->
     <div
       id="modal_overlay"
       class="bg-black/60 w-screen h-screen fixed z-100 top-0 left-0 transition-opacity duration-300 ease-in-out invisible opacity-0"
@@ -129,7 +173,57 @@
         </ul>
       </div>
     </div>
-    <!-- End Mobile Menu -->
+    <!-- @@@ End Header Section -->
+
+    <section
+      class="w-full h-screen bg-center bg-no-repeat bg-cover mt-[-60px] flex items-center justify-center px-3"
+      style="background-image: url(./src/img/hero-bg.jpg)"
+    >
+      <div class="container mx-auto">
+        <div class="md:grid md:grid-cols-2 md:gap-4 md:items-center">
+          <div class="md:order-2">
+            <img
+              src="./src/img/hero-img.png"
+              alt=""
+              class="max-w-60 m-auto lg:max-w-full lg:me-0"
+            />
+          </div>
+          <div class="mt-10">
+            <h5 class="font-primary font-bold text-3xl uppercase mb-5">
+              Hello
+            </h5>
+            <h5 class="font-primary font-bold text-4xl lg:text-6xl">
+              i'm RH Sadik a
+            </h5>
+            <h5
+              class="font-primary font-bold text-4xl text-primary mb-3 lg:text-6xl"
+            >
+              Software Engineer.
+            </h5>
+
+            <p class="text-md font-normal mb-8 text-gray-700 lg:text-lg">
+              A personal portfolio is a collection of your work, achievements,
+              and skills that highlights your abilities and professional growth.
+              It serves as
+            </p>
+            <button
+              type="button"
+              class="bg-primary group text-white font-semibold text-lg rounded-full px-5 py-3 inline-block cursor-pointer relative after:content-['\f061'] after:font-['FontAwesome'] after:absolute after:left-3.5 after:top-3 after:opacity-0 after:transition-opacity after:duration-500 hover:after:opacity-100!"
+            >
+              <div class="flex items-center gap-x-1">
+                <span
+                  class="transition-transform duration-500 group-hover:translate-x-5 font-primary"
+                  >View Portfolio</span
+                >
+                <i
+                  class="fa-solid fa-arrow-right transition-opacity duration-500 group-hover:opacity-0"
+                ></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./src/script.js"></script>
   </body>
