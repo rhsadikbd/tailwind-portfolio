@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+
     <link href="./src/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -14,7 +15,7 @@
       <div class="container mx-auto py-3 px-3">
         <div class="flex items-center justify-between">
           <div>
-            <img src="./src/img/logo-white.png" alt="" class="h-8" />
+            <img src="./src/img/logo-white.png" alt="" class="h-8 lg:h-9" />
           </div>
           <nav class="hidden lg:block">
             <ul class="flex gap-3">
@@ -176,7 +177,7 @@
     <!-- @@@ End Header Section -->
 
     <section
-      class="w-full h-screen bg-center bg-no-repeat bg-cover mt-[-60px] flex items-center justify-center px-3"
+      class="w-full h-screen bg-center bg-no-repeat bg-cover mt-[60px] md:mt-[-60px] flex items-center justify-center px-3"
       style="background-image: url(./src/img/hero-bg.jpg)"
     >
       <div class="container mx-auto">
@@ -185,21 +186,24 @@
             <img
               src="./src/img/hero-img.png"
               alt=""
-              class="max-w-60 m-auto lg:max-w-full lg:me-0"
+              class="max-w-96 m-auto lg:max-w-full lg:me-0"
             />
           </div>
           <div class="mt-10">
             <h5 class="font-primary font-bold text-3xl uppercase mb-5">
               Hello
             </h5>
-            <h5 class="font-primary font-bold text-4xl lg:text-6xl">
+            <h5 class="font-primary font-bold text-4xl lg:text-6xl mb-1">
               i'm RH Sadik a
             </h5>
-            <h5
-              class="font-primary font-bold text-4xl text-primary mb-3 lg:text-6xl"
-            >
-              Software Engineer.
-            </h5>
+            <div class="flex items-center gap-1">
+              <h5
+                id="typed"
+                class="font-primary h-10 lg:h-16 font-bold text-4xl text-primary mb-3 lg:text-6xl"
+              >
+                Software Engineer.
+              </h5>
+            </div>
 
             <p class="text-md font-normal mb-8 text-gray-700 lg:text-lg">
               A personal portfolio is a collection of your work, achievements,
@@ -225,6 +229,7 @@
       </div>
     </section>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./src/script.js"></script>
   </body>
 </html>

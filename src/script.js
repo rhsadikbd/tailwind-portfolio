@@ -16,3 +16,19 @@ modal_overlay.addEventListener("click", (e) => {
     hideInfoModal();
   }
 });
+
+// === Typed JS
+var typed = new Typed("#typed", {
+  strings: [
+    "Software Engineer",
+    "Front End Developer",
+    "Wordpress Developer",
+    "Web Designer",
+    "Freelancer",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 200,
+  startDelay: 1000,
+  loop: true,
+});

@@ -15,5 +15,19 @@
   @apply relative p-1 flex items-center justify-center cursor-pointer text-white border-2 border-primary w-9 h-9 rounded-full after:content-[''] after:absolute after:w-full after:h-full after:bg-primary after:transition-all duration-500 after:duration-500 after:rounded-full after:left-0 after:top-0 after:scale-100 hover:after:scale-0 hover:text-primary;
 }
 .menu_link {
-  @apply w-full text-center inline-block font-bold font-primary px-3 py-3 lg:py-1 rounded-sm relative after:content-[''] after:absolute after:top-0 after:left-0 after:bg-primary after:w-full after:h-full after:scale-50 after:opacity-0 after:transition-all after:duration-500 hover:after:scale-100 hover:after:opacity-15 hover:text-primary duration-500 transition-all after:rounded-sm;
+  @apply w-full lg:text-lg text-center inline-block font-bold font-primary px-3 py-3 lg:py-1 rounded-sm relative after:content-[''] after:absolute after:top-0 after:left-0 after:bg-primary after:w-full after:h-full after:scale-50 after:opacity-0 after:transition-all after:duration-500 hover:after:scale-100 hover:after:opacity-15 hover:text-primary duration-500 transition-all after:rounded-sm;
+}
+
+.typed-cursor {
+  font-size: 60px;
+  margin-top: -30px;
+  margin-left: 10px;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .typed-cursor {
+    font-size: 40px;
+    margin-top: -20px;
+    color: #666;
+  }
 }
